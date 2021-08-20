@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "266143045298",
+    "firebase_url": "https://tennis-manager-5e397.firebaseio.com",
+    "project_id": "tennis-manager-5e397",
+    "storage_bucket": "tennis-manager-5e397.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266143045298:android:b7908ebb36813bffad5bab",
+        "android_client_info": {
+          "package_name": "nl.dpit.tennismanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266143045298-t60i68dmndj4kl8rtsphl26f9uh40crq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUJ1MYfVdhlMzbbh4LdqB8x_Cs2C9jYvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266143045298-t60i68dmndj4kl8rtsphl26f9uh40crq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

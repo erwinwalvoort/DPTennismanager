@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agenda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-item-group *ngFor="let group of groupedGames">
+
+      <ion-item-divider light>{{group.date}}</ion-item-divider>
+      <ion-item id=iteim{{game.id}} *ngFor="let game of group.games" >  
+	  <ion-grid>
+		<ion-row>
+			<ion-col size="3">
+				{{game.court}}<br>{{game.strdisplaytime}}
+			</ion-col>
+			<ion-col *ngIf="game.player1 === user.shortname || game.player2 === user.shortname" size="7">
+				<div style="color: blue">{{game.player1_firstname}} {{game.player1_lastname}}</div><div style="color: blue">{{game.player2_firstname}} {{game.player2_lastname}}</div>
+			</ion-col>
+			<ion-col *ngIf="game.player1 !== user.shortname && game.player2 !== user.shortname" size="7">
+				<div>{{game.player1_firstname}} {{game.player1_lastname}}</div><div>{{game.player2_firstname}} {{game.player2_lastname}}</div>
+			</ion-col>
+			<ion-col size="1">
+				{{game.displaygame1}} {{game.displaygame2}}
+			</ion-col>
+			<ion-col size="1">
+				<ion-button  (click)="gameSelected(game)">
+					>
+					
+				</ion-button>
+			</ion-col>
+		</ion-row>
+	  </ion-grid>
+	</ion-item>
+    </ion-item-group>
+	</ion-content>
+
+

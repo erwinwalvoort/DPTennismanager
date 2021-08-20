@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="btnLogout()">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-list>
+      <ion-item>
+		Hallo {{user.firstname}} {{user.lastname}} ({{user.shortname}})
+      </ion-item>
+  </ion-list>
+  <ion-list>
+      <ion-item>
+          Eerstvolgende wedstrijd:<br>
+      </ion-item>
+	  <ion-button expand="full" (click)="gameSelected(nextgame)">
+		  <ion-item>
+			  {{nextgame.strscheduleddate}}<br>
+			  {{nextgame.strscheduledtime}} <i class = "icon ion-star"></i>
+		  </ion-item>
+		  <ion-item>
+			  {{nextgame.player1_firstname}} {{nextgame.player1_lastname}}  <br>
+			  {{nextgame.player2_firstname}} {{nextgame.player2_lastname}}  
+		  </ion-item>
+		  <ion-item>
+			  -<br>
+			  -
+		  </ion-item>
+	  </ion-button>
+  </ion-list>
+  <ion-list>
+      <ion-item>
+          Laatste wedstrijd:<br>
+      </ion-item>
+	  <ion-button expand="full" (click)="gameSelected(lastgame)">
+			  <ion-item>
+				  {{lastgame.strplayeddate}} <br>
+				  {{lastgame.strplayedtime}} 
+			  <ion-item>
+			  </ion-item>
+				  {{lastgame.player1_firstname}} {{lastgame.player1_lastname}}  <br>
+				  {{lastgame.player2_firstname}} {{lastgame.player2_lastname}}  
+			  </ion-item>
+			  <ion-item>
+				  {{lastgame.games1}}<br>
+				  {{lastgame.games2}}
+			  </ion-item>
+	  </ion-button>
+  </ion-list>
+  <ion-button expand="full" (click)="messageSelected()">Er zijn {{messagecount}} melding(en)</ion-button>
+</ion-content>

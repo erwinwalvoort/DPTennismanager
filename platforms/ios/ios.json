@@ -1,0 +1,91 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FCMPlugin\"><param name=\"ios-package\" value=\"FCMPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*/Entitlements-Debug.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>development</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*/Entitlements-Release.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>production</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "UIBackgroundModes": [
+            {
+              "xml": "<array><string>remote-notification</string></array>",
+              "count": 1
+            }
+          ],
+          "FirebaseAppDelegateProxyEnabled": [
+            {
+              "xml": "<false />",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "nl.dpit.tennismanager"
+    },
+    "cordova-plugin-fcm-with-dependecy-updated": {
+      "PACKAGE_NAME": "nl.dpit.tennismanager"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "cordova-plugin-fcm-with-dependecy-updated.FCMPlugin",
+      "file": "plugins/cordova-plugin-fcm-with-dependecy-updated/www/FCMPlugin.js",
+      "pluginId": "cordova-plugin-fcm-with-dependecy-updated",
+      "clobbers": [
+        "FCM"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-fcm-with-dependecy-updated": "7.0.9"
+  }
+}

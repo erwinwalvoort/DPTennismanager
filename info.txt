@@ -1,0 +1,9 @@
+tennismanager.dp-it.nl
+
+mysql: tennismanager.dp-it.nl - beheer/wmsy4kfX6u7@lXfF
+
+map auth
+	php login
+	php register
+	
+ftp : tennismanager / e$m8fswE8w3FuUfj
