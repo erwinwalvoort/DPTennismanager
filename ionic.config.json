@@ -1,8 +1,7 @@
 {
-  "name": "dpTennismanager",
-  "app_id": "",
-  "type": "ionic-angular",
+  "name": "ionic4-push",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "angular"
 }
