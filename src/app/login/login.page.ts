@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from  "@angular/router";
 import { HttpClient } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
-import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
+import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated';
 import { Platform } from '@ionic/angular';
 
 @Component({

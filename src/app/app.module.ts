@@ -9,7 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 //import { FCM } from '@ionic-native/fcm/ngx';
-import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
+import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({

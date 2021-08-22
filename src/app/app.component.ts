@@ -4,7 +4,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 //import { FCM} from '@ionic-native/fcm/ngx';
 import { Router } from '@angular/router';
-import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated'; 
+import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated';
 
 @Component({
   selector: 'app-root',
