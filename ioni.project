@@ -1,0 +1,7 @@
+{
+  "name": "dpTennismanager",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
