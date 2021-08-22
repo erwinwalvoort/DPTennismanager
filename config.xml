@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="nl.dpit.tennismanager" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>dPtennimanager</name>
+    <name>dPtennismanager</name>
     <description>Tennismanager voor mooie tennisavondjes</description>
     <author email="info@dp-it.nl" href="http://dp-it.nl/">de Pille-IT</author>
     <content src="index.html" />
